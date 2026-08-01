@@ -2,7 +2,7 @@
 
 set -e
 
-yarn webpack js/youtube/index.js -o dist/bundle.js --mode=production
+yarn webpack ./js/youtube/index.js --output-path ./dist --output-filename bundle.js --mode=production
 BUNDLE="dist/bundle.js"
 JS=$(cat "$BUNDLE")
 HTML="<!DOCTYPE html>
